@@ -1,0 +1,124 @@
+@import "variables";
+
+* {
+  outline: none;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  transition: 0.5s all;
+}
+a {
+  text-decoration: none;
+}
+
+a,
+span,
+p {
+  line-height: 29px;
+  font-style: normal;
+}
+
+li {
+  list-style: none;
+}
+input,
+textarea,
+button {
+  border: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+button {
+  background: none;
+  &::-moz-focus-inner {
+    border: none;
+  }
+}
+
+::after,
+::before,
+html,
+body,
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: $font-family !important;
+}
+body {
+  background: $app-background !important;
+}
+
+table {
+  height: 100%;
+  overflow-y: auto;
+  transition: 0.2s;
+  width: 100%;
+  text-align: left;
+  border-radius: 2px;
+  border-collapse: collapse;
+  display: table;
+  border: 1px solid #e5e5e5;
+  backdrop-filter: blur(250px);
+  background: #fff;
+  thead {
+    background: $white;
+    > tr td {
+      text-transform: uppercase;
+      color: $primary;
+      font-size: 15px;
+      line-height: 15px;
+      font-weight: 600;
+      text-align: left;
+      padding: 15px;
+    }
+  }
+  // th {
+  //   text-transform: capitalize;
+  //   color: $dark;
+  //   font-size: 15px;
+  //   line-height: 15px;
+  //   // font-weight: 600;
+  //   text-align: left;
+  //   padding: 15px;
+  // }
+
+  // td {
+  //   padding: 15px;
+  //   color: $dark;
+  //   font-size: 15px;
+  //   line-height: 15px;
+  //   text-align: left;
+  //   font-weight: 500;
+  // }
+
+  tbody tr {
+    &:nth-child(odd) {
+      background: rgba(49, 50, 108, 0.06);
+    }
+    td {
+      padding: 15px;
+      color: $dark;
+      font-size: 15px;
+      line-height: 15px;
+      text-align: left;
+      font-weight: 500;
+    }
+  }
+  td {
+    border-right: 1px solid #e5e5e5;
+    font-family: "Metropolis";
+  }
+  tbody tr:last-child td {
+    border-bottom: none !important;
+  }
+}

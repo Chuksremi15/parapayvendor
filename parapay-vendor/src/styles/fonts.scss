@@ -1,0 +1,93 @@
+@import "breakpoints";
+// font variables
+$xs: 0.69em;
+$sm: 0.88em;
+$md: 1.13em;
+$slg: 1.25em;
+$lg: 1.5em;
+$xlg: 1.875em;
+
+// text transforms
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+// font-sizes
+.font-xlg {
+  font-size: $xlg;
+  line-height: 39px;
+}
+.font-lg {
+  font-size: $lg;
+  line-height: 31px;
+}
+
+.font-slg {
+  font-size: $slg;
+  line-height: 20px;
+}
+.font-md {
+  font-size: $md;
+  line-height: 20px;
+}
+.font-sm {
+  font-size: $sm;
+}
+.font-xs {
+  font-size: $xs;
+}
+
+//font-weights
+.font-weight-bold {
+  font-weight: bold;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-normal {
+  font-weight: normal;
+}
+.font-weight-300 {
+  font-weight: 300;
+}
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-500 {
+  font-weight: 500;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-style-normal {
+  font-style: normal;
+}
+
+.text-center {
+  text-align: center;
+}
+
+@include media-breakpoint-down(sm) {
+  .font-sm {
+    font-size: 0.75em;
+  }
+  .font-xs {
+    font-size: 0.5em;
+  }
+  .font-md {
+    font-size: 0.562em;
+  }
+  .font-lg {
+    font-size: 0.813em;
+  }
+  .font-xlg {
+    font-size: 1.125em;
+    line-height: 17px;
+  }
+  .font-slg {
+    font-size: 12px;
+  }
+}

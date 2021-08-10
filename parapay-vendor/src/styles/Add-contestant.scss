@@ -1,0 +1,187 @@
+@import "variables";
+
+.my-card {
+  margin: 0 auto;
+  background-color: $white;
+  border: 1px solid #c4c4c4;
+  padding: 20px 30px;
+  border-radius: 5px;
+
+  h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: $primary;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .display-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+}
+
+.display-grid-32 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 10px;
+}
+
+.contestant-card {
+  width: 500px;
+  margin: 0 auto;
+  background-color: $white;
+  border: 1px solid $gray-text;
+  border-radius: 5px;
+
+  .text-section {
+    margin: 20px;
+    text-align: center;
+    background-color: $white;
+    h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+      margin: 0;
+    }
+    h4 {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+#custom-button {
+  padding: 10px;
+  color: white;
+  background-color: $primary;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#custom-button:hover {
+  background-color: darken($color: $primary, $amount: 9);
+}
+
+#custom-text {
+  margin-left: 10px;
+  font-family: sans-serif;
+  color: #aaa;
+}
+
+.eviction-card {
+  width: 850px;
+  margin: 0 auto;
+  background-color: $white;
+  padding: 20px;
+
+  .display-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 20px 0;
+  }
+  .display-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 0;
+    gap: 20px;
+  }
+
+  .eviction-image {
+    img {
+      width: 100%;
+      border-radius: 5px;
+    }
+  }
+
+  .heading {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: $primary;
+    margin: 0;
+  }
+
+  .eviction-name {
+    font-weight: 600;
+    font-size: 18px;
+    color: #424242;
+    margin: 0;
+  }
+
+  .eviction-heading {
+    font-weight: bold;
+    font-size: 24px;
+    color: $primary;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+  }
+
+  .eviction-contestant-card {
+    background: $white;
+    box-shadow: 0px 4px 4px #d6d6d6;
+
+    .img-wrap {
+      overflow: hidden;
+      height: 0;
+      /* padding controls height. will always be perfectly sqaure regardless of width */
+      padding: 50% 0;
+      position: relative;
+      opacity: 0.8;
+      cursor: pointer;
+
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    .img-fluid {
+      min-width: 100%;
+      min-height: 100%;
+      max-width: 150%;
+      position: absolute;
+      top: 0;
+      left: -50px;
+    }
+
+    .card-description {
+      margin: 5px 10px;
+      font-weight: 500;
+      font-size: 18px;
+      color: #424242;
+      line-height: 18px;
+    }
+    .card-title {
+      margin: 5px 10px;
+      font-weight: 600;
+      font-size: 20px;
+      color: $primary;
+    }
+  }
+
+  .card-btn {
+    padding: 5px 20px;
+    background-color: $primary;
+    margin: 10px 15px;
+    font-size: 18px;
+    color: $white;
+    text-align: center;
+    border-radius: 5px;
+
+    &:hover {
+      border: 1px solid $primary;
+      background: $white;
+      color: $primary;
+      font-weight: 600;
+    }
+  }
+
+  .card-btn-bg {
+    width: 300px;
+    margin: auto auto;
+    margin-top: 20px;
+  }
+}

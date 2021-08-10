@@ -1,0 +1,60 @@
+@import "variables";
+// text colors
+.color-white {
+  color: $white;
+}
+.color-primary {
+  color: $primary;
+}
+
+.color-secondary {
+  color: $secondary;
+}
+
+.color-gray-text {
+  color: $gray-text;
+}
+
+.color-dark {
+  color: $dark;
+}
+
+.color-success {
+  color: $success;
+}
+
+.color-danger {
+  color: $danger;
+}
+
+.color-warning {
+  color: $secondary;
+}
+
+.color-gray-heading {
+  color: $gray-heading;
+}
+// background colors
+.bg-white {
+  background: $white;
+}
+
+.bg-primary {
+  background: $primary;
+}
+
+.bg-secondary {
+  background: $secondary;
+}
+
+.bg-danger {
+  background: $danger;
+}
+
+.bg-dark {
+  background: $dark;
+}
+
+.bg-gray-light {
+  background: #a0a0a0;
+}
